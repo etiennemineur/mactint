@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#050505">
+<title>MacTint — peindre en seize couleurs, et en musique | Étienne Mineur</title>
+<meta name="description" content="MacTint : un logiciel de dessin bitmap en seize couleurs où chaque geste joue une note. La musique naît uniquement de ce que vous faites.">
+<link rel="canonical" href="https://etienne.design/tools/mactint/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Étienne Mineur">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:title" content="MacTint — peindre en seize couleurs, et en musique">
+<meta property="og:description" content="MacTint part de MacPaint (1984) et le prolonge en couleur : palette du Macintosh II, 38 trames, calques, une cinquantaine d’outils. Chaque geste joue une note.">
+<meta property="og:url" content="https://etienne.design/tools/mactint/">
+<meta property="og:image" content="https://etienne.design/tools/mactint/preview.png">
+<meta property="og:image:secure_url" content="https://etienne.design/tools/mactint/preview.png">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="MacTint — six volumes de couleur et un grand trait arc-en-ciel, dessinés dans le logiciel">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="MacTint — peindre en seize couleurs, et en musique">
+<meta name="twitter:description" content="MacTint part de MacPaint (1984) et le prolonge en couleur : palette du Macintosh II, 38 trames, calques, une cinquantaine d’outils. Chaque geste joue une note.">
+<meta name="twitter:image" content="https://etienne.design/tools/mactint/preview.png">
+<meta name="twitter:image:alt" content="MacTint — six volumes de couleur et un grand trait arc-en-ciel, dessinés dans le logiciel">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%23050505'/%3E%3Cg fill='%2366ff5d'%3E%3Crect x='8' y='8' width='16' height='16'/%3E%3Crect x='40' y='8' width='16' height='16'/%3E%3Crect x='8' y='40' width='16' height='16'/%3E%3Crect x='40' y='40' width='16' height='16'/%3E%3C/g%3E%3C/svg%3E">
+<!-- All interface and document text uses embedded classic bitmap strikes. -->
+<style>
+  :root { color-scheme: light; }
+  html, body { margin: 0; height: 100%; background: #1b1b1b; }
+  body {
+    overflow: hidden; -webkit-user-select: none; user-select: none;
+    background: radial-gradient(circle at 50% 40%, #3a3a3a 0%, #1b1b1b 60%, #101010 100%);
+  }
+  #screen {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    image-rendering: pixelated;
+    image-rendering: crisp-edges;
+    background: #fff;
+    
+    touch-action: none;
+  }
+  noscript { position: fixed; inset: auto 0 24px 0; text-align: center; color: #f7f7f4; font: 12px/1.5 monospace; }
+</style>
+</head>
+<body>
+<canvas id="screen" width="640" height="480" aria-label="MacTint — dessin bitmap en seize couleurs"></canvas>
+<input id="file" type="file" accept="image/*" hidden>
+<noscript>MacTint a besoin du JavaScript pour dessiner.</noscript>
+<script src="classic-data.js?v=ab15eeaf"></script>
+<script src="studio.js?v=d1286e82"></script>
+<script src="colorpaint.js?v=3e90df57"></script>
+</body>
+</html>
